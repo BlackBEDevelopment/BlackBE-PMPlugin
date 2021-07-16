@@ -46,9 +46,11 @@ class BlackBE extends PluginBase implements Listener
             if ($result->error == "2002") {
                 $this->getScheduler()->scheduleDelayedTask(new KickTask($this, $player), 10);
             }
+            unset($result);
         } else {
             $this->getLogger()->error("云黑可能炸了呢");
         }
+        unset($data);
     }
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
