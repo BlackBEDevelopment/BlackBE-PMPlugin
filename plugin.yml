@@ -1,19 +1,14 @@
-#name, main, version and api are required
-name: ExamplePlugin
-main: ExamplePlugin\MainClass
+name: BlackBE
+main: LixWorthWeida\BlackBE
 version: 1.1.0
 api: 3.0.0
 
 load: POSTWORLD
-author: PocketMine Team
-description: Example plugin showing the new API
-website: https://github.com/pmmp/ExamplePlugin
+author: LixWorth
+description: BlackBE NK Plugin blacbe.xyz
+website: https://github.com/lixworth/BlackBE-NKPlugin
+
 commands:
- example:
-  description: Example command
-  usage: "/example"
-  permission: exampleplugin.command.example
-permissions:
- exampleplugin.command.example:
-  description: "Allows the user to run the example command"
-  default: true
+ blackbe:
+  description: BlackBE 云黑插件
+  usage: "/blackbe"
